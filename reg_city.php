@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 include 'connect.php';
-include 'checkLogin.php';
+
 
 if(isset($_POST['sub'])){
     
@@ -23,17 +23,17 @@ if(isset($_POST['sub'])){
             <table>
                 <tr>
                     <td>
-                        Name
+                        Nome cidade:
                         <input type="text" name="nameCity">
                     </td>
                 </tr>
                 
                 <tr>
                     <td>
-                        <input type="submit" value="submit" name="sub">         
+                        <input type="submit" value="enviar" name="sub">         
                     </td>
                     <td>
-                        <a href="login.php"> Login</a>
+                        <a href="viewall_city.php"> Cidades Cadastradas </a>
                     </td>
                 </tr>
             </table>
